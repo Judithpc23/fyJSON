@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fy</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="LogoMiniOficial.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="intro">
+        <img src="LogoFondoNegroCompleto.png" alt="clarkode logo" class="imagenLogo">
+        <p>Generador de Archivos</p>
+    </div> 
+
+    <div class="content">
+        
+        <img src="LogoFondoBlancoCompleto.png" alt="clarkode logo" class="imagenLogo">
+        <h1>Generador de Archivos</h1>
+        
+        <label for="data-type">Selecciona el tipo de datos:</label>
+        <select id="data-type">
+            <option value="Selecciona">Selecciona</option>
+            <option value="personas">Personas</option>
+            <option value="productos">Productos</option>
+            <option value="paises">Países</option>
+        </select>
+        <button id="generate">Generar Datos</button>
+        <table id="principal-table">
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                    <th>Columna 4</th>
+                </tr>
+            </thead>
+            <tbody id="data-table"></tbody>
+        </table>
+        
+        <a id="download-link" style="display: none;">Descargar JSON</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

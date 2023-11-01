@@ -1,0 +1,159 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0; 
+    padding: 0;
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+.intro {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    transition: 1s;
+}
+
+.intro img {
+    top: 150px;
+    position: absolute;
+}
+
+.intro p{
+    color: gray;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.imagenLogo {
+    width: 30%;
+    height: 30%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.content{
+    width: 100%;
+    padding: 50px;
+    font-size: 2rem;
+}
+
+
+
+/* Estilos del Body*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('buscar q imagen podria ponel');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* animacion al contenedor*/
+}
+
+.container:hover {
+    transform: scale(1.02); /* c expande */
+}
+
+h1 {
+    color: #3498db;
+    font-size: 24px;
+    transition: color 0.3s; /* animación de color al encabezado */
+}
+
+h1:hover {
+    color: #2874a6; /* El color del encabezado cambia al pasar el cosito por encima */
+
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Agregamos una animación de escala a los botones */
+}
+
+button:hover {
+    background-color: #2874a6;
+    transform: scale(1.1); /* Los botones se ampliarán ligeramente al pasar el mouse por encima */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    transition: transform 0.2s; /*  animación de escala a la tabla */
+}
+
+table:hover {
+    transform: scale(1.01); /* La tabla se expandirá ligeramente al pasar el mouse por encima */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s; /* animación de color al encabezado de la tabla */
+}
+
+th:hover {
+    background-color: #2874a6; /* El color del encabezado cambia al pasar el cosito por encima */
+}
+
+a {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /*  animación de escala a los enlaces */
+}
+
+a:hover {
+    background-color: #2874a6;
+    transform: scale(1.1); /* Los enlaces se ampliarán ligeramente al pasar el mouse por encima */
+}
