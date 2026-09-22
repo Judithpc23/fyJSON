@@ -1,77 +1,76 @@
 # fyJSON
 
 <p align="center">
-  <img src="img/json.png" alt="Logo de fyJSON" width="160" />
-</p>
-
-<h1 align="center">fyJSON</h1>
-
-<p align="center">
-  <strong>Genera datos aleatorios y descárgalos en formato JSON de forma rápida, sencilla y flexible.</strong>
+  <img src="./LogoFondoBlancoCompleto.png" alt="Logo de fyJSON" width="220" />
 </p>
 
 <p align="center">
-  Servicio web orientado a desarrolladores, estudiantes y equipos que necesitan datos de prueba para construir, validar y demostrar sus aplicaciones.
+  <strong>Generador web de datos de prueba con exportación inmediata a JSON.</strong>
 </p>
+
+fyJSON es una aplicación web ligera orientada a acelerar el desarrollo de software mediante la creación de datos ficticios reutilizables. Su propuesta de valor es simple: **reducir tiempo de preparación de datos de prueba** y facilitar pruebas funcionales, demos y prototipos sin depender de información real.
 
 ---
 
-## 📌 Descripción del proyecto
+## Descripción del proyecto
 
-**fyJSON** es un servicio web generador de datos aleatorios con posibilidad de descargarlos en formato **JSON**. El proyecto nace como una herramienta práctica para facilitar la creación de información ficticia y reutilizable durante las etapas de desarrollo, pruebas y prototipado de aplicaciones.
+El proyecto permite seleccionar un tipo de dataset, generar registros aleatorios en una tabla visual y descargar el resultado como archivo `.json` desde el navegador. Actualmente funciona como una solución frontend sin dependencias externas ni backend.
 
-Su propuesta está pensada para reducir el tiempo empleado en la creación manual de datos de prueba y ofrecer una experiencia simple, accesible y preparada para crecer hacia nuevos formatos y funcionalidades.
+## Objetivos
 
-## 🎯 Objetivos
+- Facilitar la generación de datos de ejemplo para desarrollo y pruebas.
+- Ofrecer una experiencia rápida desde una interfaz web simple.
+- Permitir exportación directa en formato JSON.
+- Mantener una base de proyecto clara para futuras ampliaciones de formatos.
 
-- Generar datos aleatorios de manera rápida y sencilla.
-- Permitir la descarga de la información en formato JSON.
-- Facilitar el desarrollo y las pruebas de aplicaciones sin depender de datos reales.
-- Proporcionar una solución clara, accesible y fácil de utilizar.
-- Construir una base escalable para incorporar nuevos formatos de exportación.
+## Características actuales
 
-## ✨ Características principales
+- Generación de datos aleatorios para tres tipos:
+  - **Personas**
+  - **Productos**
+  - **Países/Ciudades**
+- Renderizado de 30 registros por generación en tabla HTML.
+- Actualización dinámica de encabezados según el tipo de datos.
+- Descarga del resultado generado en archivo `datos.json`.
+- Interfaz con estilos personalizados y animación de pantalla de introducción.
 
-- Generación de datos ficticios para pruebas y prototipos.
-- Exportación y descarga de archivos JSON.
-- Interfaz web enfocada en la simplicidad y facilidad de uso.
-- Proyecto desarrollado con tecnologías web modernas.
-- Arquitectura con proyección para futuras ampliaciones.
+## Casos de uso
 
-## 🚀 Casos de uso
+- Pruebas de tablas y componentes frontend.
+- Simulación de datos para demos funcionales.
+- Prácticas académicas de manipulación y consumo de JSON.
+- Ensayos rápidos de flujos de exportación de datos.
 
-fyJSON puede utilizarse en diferentes escenarios, entre ellos:
+## Tecnologías utilizadas
 
-- **Desarrollo frontend:** crear datos para probar componentes, tablas, formularios y vistas.
-- **Desarrollo backend:** validar endpoints y respuestas de servicios sin utilizar información real.
-- **Pruebas funcionales:** disponer de distintos conjuntos de datos para comprobar el comportamiento de una aplicación.
-- **Prototipado:** presentar rápidamente una aplicación con información de ejemplo.
-- **Aprendizaje:** practicar el consumo y procesamiento de archivos JSON.
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 
-## 🛠️ Tecnologías utilizadas
-
-El proyecto está construido con tecnologías fundamentales del desarrollo web:
-
-- **JavaScript** — lógica y comportamiento de la aplicación.
-- **CSS** — estilos, diseño y presentación visual.
-- **HTML** — estructura de la interfaz web.
-
-## 📂 Estructura destacada
+## Estructura real del repositorio
 
 ```text
 fyJSON/
-├── img/          # Recursos gráficos y logotipos del proyecto
-├── README.md     # Documentación del proyecto
-├── *.html        # Estructura de las vistas
-├── *.css         # Estilos de la aplicación
-└── *.js          # Lógica y funcionalidades
+├── README.md
+├── index.html
+├── index.css
+├── app.js
+├── LogoFondoBlancoCompleto.png
+├── LogoFondoBlancoMini.png
+├── LogoFondoBlancoTexto.png
+├── LogoFondoNegroCompleto.png
+├── LogoFondoNegroMini.png
+├── LogoFondoNegroTexto.png
+└── LogoMiniOficial.ico
 ```
 
-> La estructura exacta puede evolucionar a medida que se incorporen nuevas funcionalidades al proyecto.
+### Punto de entrada
 
-## ⚙️ Instalación y ejecución
+- Archivo principal: [`index.html`](./index.html)
+- Lógica de generación: [`app.js`](./app.js)
+- Estilos de interfaz: [`index.css`](./index.css)
 
-Para ejecutar el proyecto localmente:
+## Instalación y ejecución
 
 1. Clona el repositorio:
 
@@ -79,59 +78,48 @@ Para ejecutar el proyecto localmente:
    git clone https://github.com/Judithpc23/fyJSON.git
    ```
 
-2. Accede al directorio del proyecto:
+2. Entra al directorio:
 
    ```bash
    cd fyJSON
    ```
 
-3. Abre el archivo principal `index.html` en tu navegador o utiliza un servidor local para ejecutar la aplicación.
+3. Ejecuta la aplicación abriendo `index.html` en tu navegador.
 
-> Para una mejor experiencia de desarrollo, se recomienda utilizar una extensión o herramienta de servidor local, como **Live Server**.
+> También puedes usar un servidor local estático (por ejemplo, la extensión Live Server en VS Code) para una experiencia de desarrollo más cómoda.
 
-## 🔮 Próximas funcionalidades
+## Visión de futuras funcionalidades
 
-fyJSON ha sido diseñado con una visión escalable. Entre las futuras mejoras consideradas se encuentran:
+Como evolución del producto, el proyecto contempla incorporar:
 
-- Exportación de datos en formato **XML**.
-- Exportación de datos en formato **CSV**.
-- Generación de consultas o archivos **SQL**.
-- Incorporación de nuevos tipos y estructuras de datos.
-- Mejoras de personalización para definir cantidad, campos y formatos.
-- Optimización de la experiencia de usuario y del diseño responsive.
+- Exportación en formato **XML**.
+- Exportación en formato **CSV**.
+- Generación y/o exportación en formato **SQL**.
 
-Los recursos gráficos asociados a estos formatos se encuentran en la carpeta `img/`.
+Estas capacidades se consideran parte del roadmap y **no están implementadas todavía** en la versión actual del repositorio.
 
-## 🤝 Contribuciones
+## Guía de contribución
 
-Las contribuciones son bienvenidas. Si deseas proponer una mejora:
+Las contribuciones son bienvenidas.
 
-1. Realiza un fork del proyecto.
-2. Crea una rama para tu propuesta:
+1. Haz un fork del repositorio.
+2. Crea una rama para tu cambio:
 
    ```bash
-   git checkout -b feature/nueva-funcionalidad
+   git checkout -b feature/mi-mejora
    ```
 
-3. Realiza tus cambios y documenta las mejoras.
-4. Envía un pull request describiendo claramente tu propuesta.
+3. Implementa y documenta el ajuste.
+4. Envía un Pull Request con contexto claro del cambio.
 
-## 👥 Equipo de desarrollo
+## Equipo de desarrollo
 
-- **[Judithpc23](https://github.com/Judithpc23)**
-- **[Alinsonp](https://github.com/Alinsonp)**
-- **[Edadul](https://github.com/Edadul)**
+Autores listados actualmente en el proyecto:
 
-## 📄 Licencia
+- [Judithpc23](https://github.com/Judithpc23)
+- [Alinsonp](https://github.com/Alinsonp)
+- [Edadul](https://github.com/Edadul)
 
-Actualmente, el repositorio no especifica una licencia. Si el proyecto se distribuirá públicamente o será utilizado por terceros, se recomienda añadir una licencia para definir los permisos de uso, modificación y distribución.
+## Licencia
 
-## ⭐ Apoya el proyecto
-
-Si fyJSON te resulta útil, puedes apoyar su evolución dejando una estrella en el repositorio, compartiendo el proyecto o proponiendo nuevas ideas para mejorar la plataforma.
-
----
-
-<p align="center">
-  <strong>fyJSON — datos de prueba listos para impulsar tus proyectos.</strong>
-</p>
+Actualmente, este repositorio **no define una licencia** (`LICENSE` no presente). Si se planea su uso o distribución por terceros, se recomienda agregar una licencia explícita.
