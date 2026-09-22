@@ -1,10 +1,8 @@
 # fyJSON
 
 <p align="center">
-  <img src="img/LogoFondoBlancoCompleto.png" alt="Logo de fyJSON" width="160" />
+  <img src="LogoFondoBlancoCompleto.png" alt="Logo de fyJSON" width="160" />
 </p>
-
-<h1 align="center">fyJSON</h1>
 
 <p align="center">
   <strong>Genera datos aleatorios y descárgalos en formato JSON de forma rápida, sencilla y flexible.</strong>
