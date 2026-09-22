@@ -1,7 +1,7 @@
 # fyJSON
 
 <p align="center">
-  <img src="img/json.png" alt="Logo de fyJSON" width="160" />
+  <img src="img/LogoFondoBlancoCompleto.png" alt="Logo de fyJSON" width="160" />
 </p>
 
 <h1 align="center">fyJSON</h1>
