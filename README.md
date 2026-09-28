@@ -20,6 +20,11 @@
 
 Su propuesta está pensada para reducir el tiempo empleado en la creación manual de datos de prueba y ofrecer una experiencia simple, accesible y preparada para crecer hacia nuevos formatos y funcionalidades.
 
+## 🔗 Proyecto y demo
+
+- **Repositorio:** [github.com/Judithpc23/fyJSON](https://github.com/Judithpc23/fyJSON)
+- **Aplicación publicada:** [json-fy.vercel.app](https://json-fy.vercel.app/)
+
 ## 🎯 Objetivos
 
 - Generar datos aleatorios de manera rápida y sencilla.
