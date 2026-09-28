@@ -1,7 +1,7 @@
 # fyJSON
 
 <p align="center">
-  <img src="LogoFondoBlancoCompleto.png" alt="Logo de fyJSON" width="160" />
+  <img src="assets/LogoFondoBlancoCompleto.png" alt="Logo de fyJSON" width="160" />
 </p>
 
 <p align="center">
@@ -58,11 +58,11 @@ El proyecto está construido con tecnologías fundamentales del desarrollo web:
 
 ```text
 fyJSON/
-├── img/          # Recursos gráficos y logotipos del proyecto
-├── README.md     # Documentación del proyecto
-├── *.html        # Estructura de las vistas
-├── *.css         # Estilos de la aplicación
-└── *.js          # Lógica y funcionalidades
+├── assets/       # Logotipos e icono de la aplicación
+├── css/          # Estilos de la interfaz
+├── js/           # Lógica del generador y exportación JSON
+├── index.html    # Punto de entrada
+└── README.md     # Documentación del proyecto
 ```
 
 > La estructura exacta puede evolucionar a medida que se incorporen nuevas funcionalidades al proyecto.
@@ -98,7 +98,7 @@ fyJSON ha sido diseñado con una visión escalable. Entre las futuras mejoras co
 - Mejoras de personalización para definir cantidad, campos y formatos.
 - Optimización de la experiencia de usuario y del diseño responsive.
 
-Los recursos gráficos asociados a estos formatos se encuentran en la carpeta `img/`.
+Los recursos gráficos asociados al proyecto se encuentran en la carpeta `assets/`.
 
 ## 🤝 Contribuciones
 

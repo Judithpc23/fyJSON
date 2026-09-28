@@ -4,44 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fy</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="LogoMiniOficial.ico" type="image/x-icon">
+    <meta name="description" content="Genera datos de prueba y expórtalos como JSON con fyJSON.">
+    <title>fyJSON | Generador de datos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/LogoMiniOficial.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="intro">
-        <img src="LogoFondoNegroCompleto.png" alt="clarkode logo" class="imagenLogo">
-        <p>Generador de Archivos</p>
-    </div> 
-
-    <div class="content">
-        
-        <img src="LogoFondoBlancoCompleto.png" alt="clarkode logo" class="imagenLogo">
-        <h1>Generador de Archivos</h1>
-        
-        <label for="data-type">Selecciona el tipo de datos:</label>
-        <select id="data-type">
-            <option value="Selecciona">Selecciona</option>
-            <option value="personas">Personas</option>
-            <option value="productos">Productos</option>
-            <option value="paises">Países</option>
-        </select>
-        <button id="generate">Generar Datos</button>
-        <table id="principal-table">
-            <thead>
-                <tr>
-                    <th>Columna 1</th>
-                    <th>Columna 2</th>
-                    <th>Columna 3</th>
-                    <th>Columna 4</th>
-                </tr>
-            </thead>
-            <tbody id="data-table"></tbody>
-        </table>
-        
-        <a id="download-link" style="display: none;">Descargar JSON</a>
+    <div class="app-shell">
+        <header class="topbar">
+            <a class="brand" href="index.html" aria-label="fyJSON, inicio"><img class="brand-logo" src="assets/LogoFondoBlancoCompleto.png" alt="fyJSON"></a>
+            </header>
+        <main class="workspace">
+            <section class="hero" aria-labelledby="page-title">
+                <div><p class="eyebrow">Datos de prueba, sin fricción</p><h1 id="page-title">Genera el dataset<br><em>que necesitas.</em></h1><p class="hero-copy">Crea registros ficticios listos para usar en tus prototipos, APIs y pruebas.</p></div>
+                <div class="hero-mark" aria-hidden="true"><span>{</span><span>"</span><span>}</span></div>
+            </section>
+            <section class="generator-panel" aria-label="Configuración del generador">
+                <div class="panel-heading"><div><h2>Define tu generación</h2></div><span class="format-chip">JSON</span></div>
+                <div class="controls">
+                    <label class="field"><span>Tipo de datos</span><select id="data-type"><option value="" selected disabled>Selecciona una colección</option><option value="personas">Personas</option><option value="productos">Productos</option><option value="paises">Países</option></select></label>
+                    <label class="field field-count"><span>Número de registros</span><input id="record-count" type="number" min="1" max="100" value="12" inputmode="numeric"></label>
+                    <button id="generate" class="primary-button" type="button"><span>Generar datos</span><span class="button-arrow" aria-hidden="true">&#8599;</span></button>
+                </div>
+                <p id="form-message" class="form-message" role="alert"></p>
+            </section>
+            <section class="results-section" aria-labelledby="results-title">
+                <div class="results-heading"><div><h2 id="results-title">Vista previa</h2></div><div class="result-actions"><span id="record-summary" class="record-summary">Sin datos generados</span><a id="download-link" class="download-button is-hidden" href="#" download="fyjson-datos.json"><span aria-hidden="true">&#8595;</span> Descargar JSON</a></div></div>
+                <div class="table-frame"><div id="empty-state" class="empty-state"><div class="empty-icon">{ }</div><h3>Tu dataset aparecerá aquí</h3><p>Elige una colección y pulsa “Generar datos” para comenzar.</p></div><div id="table-wrapper" class="table-wrapper is-hidden"><table id="principal-table"><thead></thead><tbody id="data-table"></tbody></table></div></div>
+            </section>
+        </main>
+        <footer><span>fyJSON</span><span>Datos ficticios para construir mejor.</span></footer>
     </div>
 
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
